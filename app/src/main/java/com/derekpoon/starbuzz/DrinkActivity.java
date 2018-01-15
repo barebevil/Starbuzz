@@ -19,12 +19,16 @@ public class DrinkActivity extends AppCompatActivity {
         Drink drink = Drink.drinks[drinkNo];
 
         //populate the drink image
-        ImageView photo = (ImageView)findViewById(R.id.photo); photo.setImageResource(drink.getImageResourceId()); photo.setContentDescription(drink.getName());
+        ImageView photo = (ImageView)findViewById(R.id.photo);
+        photo.setImageResource(drink.getImageResourceId());
+        photo.setContentDescription(drink.getName());
 
         //Populate the drink name
-        TextView name = (TextView)findViewById(R.id.name); name.setText(drink.getName());
+        TextView name = (TextView)findViewById(R.id.name);
+        name.setText(drink.getName());
 
         //Populate the drink description
-        TextView description = (TextView)findViewById(R.id.description); description.setText(drink.getDescription());
+        TextView description = (TextView)findViewById(R.id.description);
+        description.setText(drink.getDescription());
     }
 }

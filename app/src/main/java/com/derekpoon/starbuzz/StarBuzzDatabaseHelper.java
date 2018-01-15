@@ -9,6 +9,10 @@ import android.database.sqlite.SQLiteOpenHelper;
  * Created by derekpoon on 28/12/2017.
  */
 
+//this class enables you to create and manage databases
+//must override onCreate and onUpgrade
+//these methods are mandatory
+
 //must extend SQLiteOpenHelper
 class StarBuzzDatabaseHelper extends SQLiteOpenHelper {
 
